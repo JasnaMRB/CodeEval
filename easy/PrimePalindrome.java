@@ -31,12 +31,11 @@ public class PrimePalindrome {
         if (num == (double) 1)
             return true;
         double sqrRoot = Math.sqrt(num);
-        for (double otherNum = 2.0; otherNum < sqrRoot; otherNum++) {
+        for (double otherNum = 2.0; otherNum <= sqrRoot; otherNum++) {
             if (num % otherNum == 0)
                 return false;
         }
         return true;
-
     }
 }
 
